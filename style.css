@@ -1,0 +1,63 @@
+a {
+  display: block;
+  text-decoration: none; }
+
+/*header*/
+header {
+  position: relative; }
+
+.container {
+  max-width: 1770px;
+  margin: 0 auto; }
+
+.juosta {
+  width: 80%; }
+  .juosta .pagalbinis {
+    position: absolute;
+    background-image: url("img/box-line.png");
+    background-size: cover;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+  .juosta div ul {
+    width: 350px;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    border-right: 1px solid #909a89; }
+    .juosta div ul a {
+      color: #3c9520;
+      font-size: 25px; }
+
+.cart {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none; }
+  .cart a {
+    font-size: 35.72px;
+    color: #3c9520;
+    height: 60%; }
+
+.background-slider {
+  width: 100%;
+  height: auto; }
+  .background-slider img {
+    width: 100%; }
+  .background-slider button {
+    position: absolute; }
+  .background-slider .background-menu {
+    background-color: #fff7;
+    width: 100%;
+    height: 205px;
+    position: absolute; }
+
+/*# sourceMappingURL=style.css.map */

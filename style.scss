@@ -1,0 +1,85 @@
+$green: #3c9520;
+
+a {
+  display: block;
+  text-decoration: none;
+}
+/*header*/
+
+header {
+  position: relative;
+}
+
+.container {
+  max-width: 1770px;
+  margin: 0 auto;
+}
+
+.juosta {
+  width: 80%;
+
+  .pagalbinis {
+    position: absolute;
+    background-image: url("img/box-line.png");
+    background-size: cover;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  div {
+    ul {
+      width: 350px;
+      height: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      border-right: 1px solid #909a89;
+
+      a {
+        color: $green;
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+.cart {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+  a {
+    font-size: 35.72px;
+    color: $green;
+    height: 60%;
+  }
+}
+
+.background-slider {
+  width:100%;
+  height:auto;
+
+  img {
+    width: 100%;
+  }
+
+  button {
+    position: absolute;
+  }
+
+  .background-menu {
+    background-color: #fff7;
+    width: 100%;
+    height: 205px;
+    position: absolute;
+  }
+}
