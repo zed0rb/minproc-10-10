@@ -1,3 +1,6 @@
+div {
+  flex-wrap: wrap; }
+
 a {
   display: block;
   text-decoration: none; }
@@ -13,19 +16,22 @@ header {
 .juosta {
   width: 85%;
   position: absolute;
-  box-shadow: -67px 13px 40px 10px grey; }
+  box-shadow: -67px 13px 40px 10px grey;
+  background-color: red; }
   .juosta .pagalbinis {
     background-image: url("img/linija.jpg");
     background-size: cover;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-content: baseline; }
+    align-content: baseline;
+    flex-wrap: wrap; }
     .juosta .pagalbinis ul {
       margin: 0;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      flex-wrap: wrap;
       align-items: center;
       list-style: none;
       border-right: 1px solid #909a89; }
@@ -64,9 +70,9 @@ header {
     right: 30px; }
 
 .background-menu {
-  background-color: #fff7;
+  background-color: #fff9;
+  border-bottom: 1px solid grey;
   width: 100%;
-  height: 205px;
   position: absolute;
   top: 0;
   left: 0; }
@@ -75,16 +81,16 @@ header {
   height: 205px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-end; }
-  .pagalbinis-logo img {
-    width: 200px;
-    height: 100px; }
+  align-items: flex-end;
+  padding: 10px; }
   .pagalbinis-logo ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    list-style: none; }
+    list-style: none;
+    flex-wrap: wrap; }
     .pagalbinis-logo ul li {
       padding-left: 40px; }
       .pagalbinis-logo ul li a {
@@ -94,5 +100,273 @@ header {
       .pagalbinis-logo ul li a:hover {
         color: #a1a1a1;
         text-decoration: underline; }
+
+/* store banner */
+.background-storebaner {
+  background-image: url("img/linija2.jpg");
+  background-size: cover; }
+  .background-storebaner .pagalbinis-storebaner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0; }
+  .background-storebaner button {
+    padding: 25px 70px;
+    font-size: 28px;
+    border-radius: 80px;
+    background-color: #3c9520;
+    border: 2px solid white;
+    color: white; }
+  .background-storebaner div {
+    padding: 0 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .background-storebaner div img {
+      height: 100%; }
+    .background-storebaner div .store {
+      padding: 10px 10px;
+      border: none; }
+
+/* PRODUKTAI */
+.background-vaistai {
+  margin: 100px 0; }
+  .background-vaistai .pagalbinis-vaistai {
+    font-size: 24px;
+    color: #3c9520;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .background-vaistai .pagalbinis-vaistai .vaistai {
+      width: 21%;
+      text-align: center; }
+      .background-vaistai .pagalbinis-vaistai .vaistai .foto {
+        width: 100%;
+        border-bottom: 2px solid darkgrey; }
+        .background-vaistai .pagalbinis-vaistai .vaistai .foto img {
+          height: 75%;
+          width: 75%;
+          padding-bottom: 10px; }
+      .background-vaistai .pagalbinis-vaistai .vaistai .price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: 700; }
+        .background-vaistai .pagalbinis-vaistai .vaistai .price .kaina {
+          font-size: 40px;
+          margin: 0; }
+        .background-vaistai .pagalbinis-vaistai .vaistai .price button {
+          background-color: #3c9520;
+          color: white;
+          padding: 0px 25px; }
+
+.background-vaistai2 {
+  background-color: #c3e25a; }
+  .background-vaistai2 .pagalbinis-vaistai2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .background-vaistai2 .pagalbinis-vaistai2 .foto-wrapper {
+      width: 22%;
+      border: 5px solid #ffffff;
+      text-align: center;
+      padding: 20px 0;
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .background-vaistai2 .pagalbinis-vaistai2 .foto-wrapper a {
+        text-decoration: none; }
+      .background-vaistai2 .pagalbinis-vaistai2 .foto-wrapper img {
+        width: 175px;
+        height: 175px;
+        border-radius: 100%; }
+      .background-vaistai2 .pagalbinis-vaistai2 .foto-wrapper h3 {
+        font-size: 34px;
+        color: #3c9520; }
+
+/* obuolys */
+.background-obuolys {
+  position: relative;
+  display: flex;
+  justify-content: flex-end; }
+  .background-obuolys .pagalbinis {
+    position: absolute;
+    color: #3c9520;
+    top: 40px;
+    left: 50px; }
+    .background-obuolys .pagalbinis h3 {
+      font-size: 60px; }
+    .background-obuolys .pagalbinis p {
+      font-size: 32px; }
+    .background-obuolys .pagalbinis button {
+      color: white;
+      background-color: #3c9520;
+      font-size: 32px; }
+  .background-obuolys img {
+    width: auto;
+    height: auto; }
+
+/* siuntimas */
+.background-siuntimas {
+  background-image: url("img/delivery/background.jpg");
+  border-bottom: 2px solid black;
+  border-top: 2px solid black; }
+  .background-siuntimas .pagalbinis-siuntimas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0; }
+    .background-siuntimas .pagalbinis-siuntimas .siuntimo-img {
+      width: 30%;
+      text-align: center;
+      position: relative; }
+      .background-siuntimas .pagalbinis-siuntimas .siuntimo-img h3 {
+        color: #3c9520;
+        font-size: 32px;
+        margin: 0; }
+      .background-siuntimas .pagalbinis-siuntimas .siuntimo-img p {
+        font-size: 24px;
+        color: #5f5f5f; }
+      .background-siuntimas .pagalbinis-siuntimas .siuntimo-img div {
+        box-shadow: 0 0 2px 1px;
+        position: absolute;
+        top: 15%;
+        bottom: 0%;
+        right: 0; }
+
+/* tekstas & fb */
+.pagalbinis-turinys {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #3c9520; }
+  .pagalbinis-turinys h3 {
+    font-weight: 700;
+    font-size: 40px; }
+  .pagalbinis-turinys .tekstas {
+    width: 50%;
+    text-align: justify;
+    padding-right: 20px; }
+    .pagalbinis-turinys .tekstas p {
+      font-size: 24px;
+      line-height: 1; }
+  .pagalbinis-turinys .facebook {
+    width: 40% div;
+      width-width: 100%; }
+
+/* footer */
+.background-footer {
+  background-color: #222222; }
+  .background-footer .pagalbinis-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #3c9520;
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0; }
+    .background-footer .pagalbinis-footer h3 {
+      color: #fff; }
+    .background-footer .pagalbinis-footer .events {
+      padding-right: 60px;
+      width: 50%; }
+      .background-footer .pagalbinis-footer .events td {
+        padding-right: 40px;
+        padding-top: 40px;
+        vertical-align: top; }
+        .background-footer .pagalbinis-footer .events td p {
+          color: white; }
+        .background-footer .pagalbinis-footer .events td a {
+          text-decoration: none;
+          color: #3c9520; }
+    .background-footer .pagalbinis-footer .contacts {
+      color: white; }
+      .background-footer .pagalbinis-footer .contacts li {
+        padding: 10px 0;
+        list-style: none; }
+        .background-footer .pagalbinis-footer .contacts li i {
+          position: relative;
+          right: 20px; }
+      .background-footer .pagalbinis-footer .contacts .color {
+        color: #3c9520; }
+      .background-footer .pagalbinis-footer .contacts div {
+        background-color: white;
+        width: auto;
+        text-align: right; }
+        .background-footer .pagalbinis-footer .contacts div i {
+          color: #3c9520;
+          padding-right: 5px; }
+        .background-footer .pagalbinis-footer .contacts div input {
+          width: calc(100% - 21px);
+          border: none;
+          padding: 0 10px; }
+
+.background-copyrights {
+  background-color: #000; }
+  .background-copyrights .pagalbinis-copyrights {
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto; }
+    .background-copyrights .pagalbinis-copyrights .copyrights {
+      float: left; }
+    .background-copyrights .pagalbinis-copyrights .kazkas {
+      float: right; }
+
+/* media */
+@media only screen and (max-width: 1480px) {
+  .background-storebaner {
+    display: none; } }
+@media only screen and (max-width: 1410px) {
+  .pagalbinis-logo {
+    flex-direction: column;
+    align-items: flex-start; }
+    .pagalbinis-logo ul {
+      padding: 0; }
+    .pagalbinis-logo img {
+      width: 13%; }
+
+  .foto-wrapper h3 {
+    font-size: 24px !important; } }
+@media only screen and (max-width: 1200px) {
+  .pagalbinis-logo ul {
+    justify-content: center; }
+
+  .background-vaistai2 .pagalbinis-vaistai2 {
+    justify-content: space-around; }
+    .background-vaistai2 .pagalbinis-vaistai2 .foto-wrapper {
+      width: 30%; } }
+@media only screen and (max-width: 992px) {
+  .groteles {
+    display: none; }
+
+  .background-slider .w3-display-right, .background-slider .w3-display-left {
+    top: 90%; } }
+@media only screen and (max-width: 992px) {
+  .pagalbinis-logo img {
+    visibility: hidden; }
+
+  .pagalbinis-logo {
+    height: 150px; }
+    .pagalbinis-logo ul li {
+      padding-left: 10px; }
+      .pagalbinis-logo ul li a {
+        font-size: 24px; }
+
+  .background-siuntimas .pagalbinis-siuntimas .siuntimo-img h3 {
+    font-size: 24px; }
+  .background-siuntimas .pagalbinis-siuntimas .siuntimo-img p {
+    font-size: 16px; }
+
+  .pagalbinis-turinys .tekstas {
+    width: 100%; }
+
+  .background-footer .pagalbinis-footer {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

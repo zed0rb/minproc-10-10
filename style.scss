@@ -1,5 +1,8 @@
 $green: #3c9520;
 
+div {
+  flex-wrap: wrap;
+}
 a {
   display: block;
   text-decoration: none;
@@ -19,6 +22,7 @@ header {
   width: 85%;
   position: absolute;
   box-shadow: -67px 13px 40px 10px grey;
+  background-color: red;
 
 
   .pagalbinis {
@@ -29,6 +33,7 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     align-content: baseline;
+    flex-wrap: wrap;
 
 
     ul {
@@ -36,6 +41,7 @@ header {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      flex-wrap: wrap;
       align-items: center;
       list-style: none;
       border-right: 1px solid #909a89;
@@ -99,9 +105,9 @@ header {
 }
 
 .background-menu {
-  background-color: #fff7;
+  background-color: #fff9;
+  border-bottom: 1px solid grey;
   width: 100%;
-  height: 205px;
   position: absolute;
   top: 0;
   left: 0;
@@ -111,12 +117,13 @@ header {
   height: 205px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
+  padding: 10px;
 
   img {
-    width: 200px;
-    height: 100px;
+
   }
 
   ul {
@@ -124,6 +131,7 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     list-style: none;
+    flex-wrap: wrap;
 
     li {
       padding-left: 40px;
@@ -137,6 +145,422 @@ header {
         color: #a1a1a1;
         text-decoration: underline;
       }
+    }
+  }
+}
+
+/* store banner */
+
+.background-storebaner {
+  background-image: url("img/linija2.jpg");
+  background-size: cover;
+
+  .pagalbinis-storebaner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+    button {
+      padding: 25px 70px;
+      font-size: 28px;
+      border-radius: 80px;
+      background-color: $green;
+      border: 2px solid white;
+      color: white;
+    }
+    div {
+      padding: 0 70px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        height: 100%;
+      }
+
+      .store {
+        padding: 10px 10px;
+        border: none;
+      }
+    }
+  }
+
+/* PRODUKTAI */
+
+.background-vaistai {
+  margin: 100px 0;
+
+  .pagalbinis-vaistai {
+    font-size: 24px;
+    color: $green;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .vaistai {
+      width: 21%;
+      text-align: center;
+
+
+
+
+      .foto {
+        width: 100%;
+        border-bottom: 2px solid darkgrey;
+
+        img {
+          height: 75%;
+          width: 75%;
+          padding-bottom: 10px;
+        }
+      }
+
+      .price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: 700;
+
+        .kaina {
+          font-size: 40px;
+          margin: 0;
+        }
+
+        button {
+          background-color: $green;
+          color: white;
+          padding: 0px 25px;
+        }
+      }
+    }
+  }
+}
+
+.background-vaistai2 {
+  background-color: #c3e25a;
+
+  .pagalbinis-vaistai2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .foto-wrapper {
+      width: 22%;
+      border: 5px solid #ffffff;
+      text-align: center;
+      padding: 20px 0;
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+      }
+
+      img {
+        width: 175px;
+        height: 175px;
+        border-radius: 100%;
+
+      }
+
+      h3 {
+        font-size: 34px;
+        color: $green;
+      }
+    }
+  }
+}
+
+/* obuolys */
+
+.background-obuolys {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+
+  .pagalbinis {
+    position:absolute;
+    color:$green;
+    top: 40px;
+    left: 50px;
+
+    h3 {
+      font-size: 60px;
+    }
+    p {
+      font-size: 32px;
+    }
+    button {
+      color: white;
+      background-color: $green;
+      font-size: 32px;
+    }
+  }
+  img {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* siuntimas */
+
+.background-siuntimas {
+  background-image: url("img/delivery/background.jpg");
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+
+  .pagalbinis-siuntimas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0;
+
+    .siuntimo-img {
+      width: 30%;
+      text-align: center;
+      position: relative;
+
+      h3 {
+        color: $green;
+        font-size: 32px;
+        margin: 0;
+      }
+
+      p {
+        font-size: 24px;
+        color: #5f5f5f;
+      }
+
+      div {
+        box-shadow: 0 0 2px 1px;
+        position: absolute;
+        top: 15%;
+        bottom: 0%;
+        right: 0;
+      }
+    }
+  }
+}
+
+/* tekstas & fb */
+
+.pagalbinis-turinys {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: $green;
+
+  h3 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .tekstas {
+    width: 50%;
+    text-align: justify;
+    padding-right: 20px;
+
+    p {
+      font-size: 24px;
+      line-height: 1;
+    }
+  }
+
+  .facebook {
+    width: 40%
+
+    div {
+      width: 100%;}
+    }
+  }
+
+/* footer */
+
+.background-footer {
+  background-color: #222222;
+
+  .pagalbinis-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color:$green;
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0;
+
+    h3 {
+      color: #fff;
+    }
+
+    .events {
+      padding-right: 60px;
+      width: 50%;
+
+      td {
+        padding-right: 40px;
+        padding-top: 40px;
+        vertical-align: top;
+
+        p {
+          color: white;
+        }
+
+        a {
+          text-decoration: none;
+          color: $green;
+        }
+      }
+    }
+    .contacts {
+      color: white;
+
+      li {
+        padding: 10px 0;
+        list-style: none;
+
+        i {
+          position: relative;
+          right: 20px;
+        }
+      }
+
+      .color {
+        color: $green;
+      }
+
+      div {
+        background-color: white;
+        width: auto;
+        text-align: right;
+
+        i {
+          color:$green;
+        padding-right: 5px;
+        }
+
+        input {
+          width: calc(100% - 21px);
+          border: none;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+.background-copyrights {
+  background-color: #000;
+
+  .pagalbinis-copyrights {
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+
+    .copyrights {
+      float: left;
+    }
+
+    .kazkas {
+      float: right;
+    }
+  }
+}
+
+/* media */
+@media only screen and (max-width: 1480px) {
+  .background-storebaner {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1410px){
+  .pagalbinis-logo {
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    ul {
+      padding: 0;
+    }
+
+    img {
+      width: 13%;
+    }
+  }
+
+  .foto-wrapper {
+    h3 {
+      font-size: 24px !important;
+    }
+  }
+}
+@media only screen and (max-width: 1200px){
+  .pagalbinis-logo ul {
+    justify-content: center;
+  }
+
+  .background-vaistai2 .pagalbinis-vaistai2 {
+    justify-content: space-around;
+
+   .foto-wrapper {
+     width: 30%;
+   }
+  }
+}
+
+@media only screen and (max-width: 992px){
+ .groteles {
+   display: none;
+ }
+  .background-slider .w3-display-right, .background-slider .w3-display-left {
+    top: 90%;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .pagalbinis-logo img {
+    visibility: hidden ;
+  }
+  .pagalbinis-logo {
+    height: 150px;
+
+   ul li{
+    padding-left: 10px;
+
+     a {
+     font-size: 24px;
+    }
+   }
+  }
+
+  .background-siuntimas .pagalbinis-siuntimas .siuntimo-img {
+    h3 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .pagalbinis-turinys .tekstas{
+    width: 100%;
+  }
+
+  .background-footer .pagalbinis-footer {
+    width: 100%;
+
+    .events {
+
     }
   }
 }
